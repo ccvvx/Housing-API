@@ -18,7 +18,6 @@ from django.urls import path
 from housing import views
 
 urlpatterns = [
-    path('home/', admin.site.urls),
     path('admin/', admin.site.urls),
     path('housing/', views.housing_list),
     path('housing/<int:id>', views.housing_detail),
