@@ -1,4 +1,4 @@
-from turtle import home
+
 from django.http import JsonResponse
 
 import housing
