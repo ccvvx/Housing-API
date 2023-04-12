@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1', "0.0.0.0:$PORT",'housing-api-production.up.railway.app']
+ALLOWED_HOSTS = ['127.0.0.1', "0.0.0.0:$PORT",'https://housing-api-production.up.railway.app']
 
 
 # Application definition
@@ -131,7 +131,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
